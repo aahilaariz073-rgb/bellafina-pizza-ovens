@@ -8,58 +8,67 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#152238">
+<meta name="theme-color" content="#0d1b2a">
 <link rel="canonical" href="https://pizzaovens.bellafinaoutdoors.com/">
 <meta property="og:title" content="Outdoor Pizza Ovens | BellaFina Outdoors">
 <meta property="og:description" content="Built-in and freestanding outdoor pizza ovens, gas and wood-fired — designed, supplied and supported across Southern California.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pizzaovens.bellafinaoutdoors.com/">
-<meta property="og:image" content="https://firebowls.bellafinaoutdoors.com/assets/hero-fire-bowl.webp">
+<meta property="og:image" content="https://pizzaovens.bellafinaoutdoors.com/assets/icon-512.png">
 <meta property="og:site_name" content="BellaFina Outdoors">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Outdoor Pizza Ovens | BellaFina Outdoors">
 <meta name="twitter:description" content="Built-in and freestanding outdoor pizza ovens, gas and wood-fired — designed, supplied and supported across Southern California.">
-<meta name="twitter:image" content="https://firebowls.bellafinaoutdoors.com/assets/hero-fire-bowl.webp">
+<meta name="twitter:image" content="https://pizzaovens.bellafinaoutdoors.com/assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body data-lead-source="Outdoor pizza ovens page">
 
 <header>
   <div class="nav-inner">
-    <a class="logo" href="https://www.bellafinaoutdoors.com/?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=header_logo" target="_blank" rel="noopener">
+    <a class="logo" href="#top" aria-label="BellaFina Outdoors — back to top">
       <img src="assets/logo.webp" alt="BellaFina Outdoors">
     </a>
     <nav class="links">
       <a href="#top">Pizza Ovens</a>
+      <a href="#fuel">Gas vs Wood</a>
       <a href="#types">Oven Types</a>
-      <a href="#wood">Wood-Fired</a>
-      <a href="#who">Homeowners &amp; Pros</a>
+      <a href="#how">How It Works</a>
+      <a href="#specs">How to Choose</a>
       <a href="#areas">Service Area</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="header-ctas">
-      <a class="btn btn-ghost" href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=header_shop" target="_blank" rel="noopener">Shop</a>
-      <a class="btn btn-primary" href="https://www.bellafinaoutdoors.com/contact?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=header_contact" target="_blank" rel="noopener">Contact Us</a>
+      <button type="button" class="btn btn-primary" data-quote-modal>Request My Free Quote</button>
     </div>
   </div>
 </header>
 
+<!-- 1. Hero -->
 <section class="hero hero-oven" id="top">
   <div class="hero-ring"></div>
   <div class="hero-grid">
     <div class="hero-inner">
-      <span class="eyebrow">Backyards &amp; Outdoor Kitchens — Orange County, LA &amp; San Diego</span>
+      <span class="eyebrow">Orange County &middot; Los Angeles &middot; San Diego</span>
       <h1>Outdoor Pizza Ovens, Built In or Freestanding, Gas or Wood-Fired</h1>
-      <p class="sub">Residential pizza ovens for backyards and outdoor kitchens — selected with you, on display at our Huntington Beach showroom, and supported across Southern California.</p>
+      <p class="sub">Residential pizza ovens for backyards and outdoor kitchens — specified with you, on display at our Huntington Beach showroom, and delivered across Southern California.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=hero_shop_pizza_ovens" target="_blank" rel="noopener">Shop Pizza Ovens <span class="btn-arrow">&rarr;</span></a>
-        <a class="btn btn-outline" href="#types">Compare Oven Types <span class="btn-arrow">&rarr;</span></a>
+        <button type="button" class="btn btn-primary" data-quote-modal>Request My Free Quote <span class="btn-arrow">&rarr;</span></button>
+        <a class="btn btn-outline" href="#fuel">Compare Gas and Wood <span class="btn-arrow">&rarr;</span></a>
       </div>
+      <ul class="hero-points">
+        <li>Gas, wood-fired and dual-fuel models from several manufacturers</li>
+        <li>Clearances, flue route and base loading identified before anything is built</li>
+        <li>Trade pricing and cut sheets for contractors and designers</li>
+      </ul>
     </div>
 
     <form class="lead-card" id="lead-form">
       <h3>Choose Your Pizza Oven</h3>
-      <p class="lead-sub">Tell us where the oven would sit and how often you'd use it. We'll come back with the options worth considering and pricing — usually within one business day.</p>
+      <p class="lead-sub">Tell us where the oven would sit and how often you would use it. We come back with the options worth considering and pricing, usually within one business day.</p>
 
       <div class="lead-error" id="lead-error" role="alert"></div>
       <div class="lead-fields">
@@ -99,173 +108,241 @@
   </div>
 </section>
 
+<!-- 2. Trust strip -->
 <div class="trust-strip">
   <div class="wrap">
-    <span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>Showroom Displays To View</span>
-    <span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>Gas, Wood-Fired &amp; Dual Fuel</span>
-    <span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>Built-In or Freestanding</span>
-    <span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>Trade Pricing for Contractors</span>
+    <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>Huntington Beach Showroom</span>
+    <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>Gas, Wood-Fired &amp; Dual Fuel</span>
+    <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>Built-In or Freestanding</span>
+    <span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>Trade Pricing for Contractors</span>
   </div>
 </div>
 
-<section class="lede">
+<!-- 3. Design center -->
+<section class="section section-navy design-center" id="design-center">
   <div class="wrap">
-    <span class="eyebrow">Why a Pizza Oven</span>
-    <h2>The One Appliance That Turns Cooking Into the Entertainment</h2>
-    <p class="first">A grill is something the host disappears to. A pizza oven is the opposite — it works fast enough that people stand around it, stretch their own dough, watch a pizza cook in a couple of minutes and eat it standing up. It changes the shape of an evening more than almost anything else you can put in a backyard.</p>
-    <p>It also does something a domestic kitchen cannot. The floor temperature a dedicated oven reaches is what produces a properly cooked base and a leopard-spotted crust; a conventional indoor oven simply does not get there. And when the pizzas are finished, the retained heat is still good for bread, roasted vegetables, whole fish or a slow-cooked shoulder.</p>
-    <p class="pull">The oven that ends up being used every other week is the one that heats fast enough for a weeknight. Everything else is a party appliance.</p>
-    <p>BellaFina Outdoors is an outdoor living design center. We help homeowners and trade professionals weigh fuel type, built-in versus freestanding, size, clearances and flue routing — and coordinate the oven with the outdoor kitchen, fire features, stone and tile going in around it.</p>
+    <div>
+      <span class="eyebrow">An Outdoor Living Design Center</span>
+      <h2>We Specify the Oven With You, Not Just Ship It</h2>
+      <p>BellaFina Outdoors is a design center for outdoor living in Huntington Beach. A pizza oven is rarely a standalone purchase — it sits in a kitchen run, against a veneer, under something, with a gas line or a wood store nearby. Those details decide which oven fits.</p>
+      <p>So the conversation starts with your space and how you cook, not with a product page. You get a short list that suits the site, the documents your installer needs, and one point of contact for the oven, the surround and the stone around it.</p>
+    </div>
+    <div class="dc-grid">
+      <div class="dc-card">
+        <h3>One Point of Contact</h3>
+        <p>Oven, enclosure, veneer and accessories handled together instead of across four suppliers.</p>
+      </div>
+      <div class="dc-card">
+        <h3>Specifications Up Front</h3>
+        <p>Clearances, venting and base loading pulled from the manufacturer before the enclosure is poured.</p>
+      </div>
+      <div class="dc-card">
+        <h3>Showroom, Not Renderings</h3>
+        <p>Compare size, build quality and working height in person at Huntington Beach.</p>
+      </div>
+      <div class="dc-card">
+        <h3>Homeowners and Trade</h3>
+        <p>The same catalog, supported for one backyard or for a repeat build calendar.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="split" id="fuel">
+<!-- 4. Lede -->
+<section class="section section-cream lede">
+  <div class="wrap">
+    <span class="eyebrow">Why a Pizza Oven</span>
+    <h2>The One Appliance People Stand Around</h2>
+    <p class="first">A grill is something the host disappears to. A pizza oven works the other way — it cooks fast enough that people stay beside it, stretch their own dough, watch a pizza go in and eat it standing up. That is most of the reason to buy one.</p>
+    <p>It also does something an indoor kitchen cannot. The floor temperature a dedicated oven reaches is what produces a cooked base and a leopard-spotted crust; a domestic oven does not get there. When the pizzas are finished, the retained heat is still good for bread, roasted vegetables, whole fish or a slow-cooked shoulder.</p>
+    <p class="pull">The oven that gets used every other week is the one that heats fast enough for a weeknight. Everything else is a party appliance.</p>
+    <p>Which is why the first question we ask is how often you expect to cook. That answer points to a fuel, a size and an installation type faster than any spec sheet does.</p>
+  </div>
+</section>
+
+<!-- 5. Product splits -->
+<section class="split section-white" id="fuel">
   <div class="wrap">
     <div>
       <span class="eyebrow">Gas Pizza Ovens</span>
-      <h2>Gas Pizza Ovens: Hot Enough on a Tuesday</h2>
-      <p>The strongest argument for gas is frequency. It reaches cooking temperature quickly, holds it without anyone tending a fire, and shuts off when you're done — which is what turns a pizza oven from a weekend event into something you use on a weeknight after work. Temperature control is steady enough that the first pizza and the tenth come out the same.</p>
-      <p>Gas ovens are also the easier ones to build into an outdoor kitchen run, since the fuel supply is the same one already feeding the grill and the venting arrangement is generally simpler than a wood-fired flue.</p>
+      <h2>Gas: Hot Enough on a Tuesday</h2>
+      <p>The argument for gas is frequency. It reaches cooking temperature quickly, holds it without anyone tending a fire, and shuts off when you are done — which is what turns a pizza oven from a weekend event into a weeknight one. Temperature control is steady enough that the first pizza and the tenth come out the same.</p>
+      <p>Gas ovens are also easier to build into a kitchen run, since the fuel supply is the one already feeding the grill and the venting arrangement is simpler than a wood-fired flue.</p>
       <ul>
-        <li>Fast heat-up and steady temperature with no fire to manage</li>
+        <li>Fast heat-up and steady temperature, no fire to manage</li>
         <li>Natural gas or propane, matched to the supply already at the kitchen</li>
         <li>Built-in and freestanding models across a range of sizes</li>
         <li>Dual-fuel options where you want gas convenience and wood character</li>
       </ul>
-      <a class="btn btn-navy" href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=split_gas_pizza_ovens" target="_blank" rel="noopener">Shop Gas Pizza Ovens <span class="btn-arrow">&rarr;</span></a>
+      <a class="btn btn-navy" href="https://www.bellafinaoutdoors.com/shop?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=split_gas_ovens" target="_blank" rel="noopener">See Gas Ovens on Our Main Site <span class="btn-arrow">&rarr;</span></a>
     </div>
     <div class="visual visual-fire">
-      <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="1.2" aria-hidden="true"><path d="M3 15a9 6 0 0 1 18 0z"/><path d="M8.5 15a3.5 2.5 0 0 1 7 0"/><path d="M3 15v3h18v-3"/><path d="M17 5.5c0 1.5-1.5 2-1.5 3.5"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M3 15a9 6 0 0 1 18 0z"/><path d="M8.5 15a3.5 2.5 0 0 1 7 0"/><path d="M3 15v3h18v-3"/><path d="M17 5.5c0 1.5-1.5 2-1.5 3.5"/></svg>
     </div>
   </div>
 </section>
 
-<section class="split reverse" id="wood">
+<section class="split reverse section-cream" id="wood">
   <div class="wrap">
     <div>
       <span class="eyebrow">Wood-Fired Pizza Ovens</span>
-      <h2>Wood-Fired Ovens: Live Fire, Smoke and the Ritual</h2>
-      <p>A wood-fired oven asks more of you and gives something back that gas cannot: the smell, the live flame licking the dome, and a smoke character that carries into everything cooked after the pizzas are done. Building and managing the fire is part of the appeal for the people who want one — and a chore for the people who don't.</p>
-      <p>Heavier masonry ovens take longer to come up to temperature but hold heat for hours afterwards, which makes them excellent for a long evening of cooking that starts with pizza and finishes with bread. The practical considerations are wood storage, flue routing and where the smoke ends up relative to windows and neighbours.</p>
+      <h2>Wood: Live Fire, Smoke and the Ritual</h2>
+      <p>A wood-fired oven asks more of you and gives back something gas cannot: the smell, the flame licking the dome, and a smoke character that carries into everything cooked after the pizzas are done. Building and managing the fire is the appeal for the people who want one, and a chore for the people who don't.</p>
+      <p>Heavier masonry ovens take longer to come up to temperature but hold heat for hours afterwards, which suits a long evening that starts with pizza and finishes with bread. The practical items are wood storage, flue routing, and where the smoke ends up relative to windows and neighbours.</p>
       <ul>
-        <li>Live fire, smoke character and high retained heat for cooking after the pizzas</li>
-        <li>Masonry and insulated-dome constructions with different heat-up profiles</li>
+        <li>Live fire, smoke character and high retained heat after the pizzas</li>
+        <li>Masonry and insulated-dome builds with different heat-up profiles</li>
         <li>Flue and clearance requirements identified before the enclosure is built</li>
-        <li>Dual-fuel models for wood on the weekend and gas mid-week</li>
+        <li>Dual-fuel models for wood at the weekend and gas mid-week</li>
       </ul>
-      <a class="btn btn-navy" href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=split_wood_fired_ovens" target="_blank" rel="noopener">Explore Wood-Fired Ovens <span class="btn-arrow">&rarr;</span></a>
+      <a class="btn btn-navy" href="https://www.bellafinaoutdoors.com/shop?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=split_wood_ovens" target="_blank" rel="noopener">See Wood-Fired Ovens on Our Main Site <span class="btn-arrow">&rarr;</span></a>
     </div>
     <div class="visual visual-water">
-      <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="1.2" aria-hidden="true"><path d="M4 16a8 6 0 0 1 16 0z"/><path d="M4 16v3h16v-3"/><path d="M12 8c-.8 2-2.5 3-2.5 5a2.5 2.5 0 0 0 5 0c0-1-.5-1.8-1-2.3.4 1-.2 1.8-.7 2-.5-1.2 0-2.5-.8-4.7z"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M4 16a8 6 0 0 1 16 0z"/><path d="M4 16v3h16v-3"/><path d="M12 8c-.8 2-2.5 3-2.5 5a2.5 2.5 0 0 0 5 0c0-1-.5-1.8-1-2.3.4 1-.2 1.8-.7 2-.5-1.2 0-2.5-.8-4.7z"/></svg>
     </div>
   </div>
 </section>
 
-<section class="categories" id="types">
+<!-- 6. Product grid -->
+<section class="section section-white" id="types">
   <div class="head">
     <span class="eyebrow">Shop by Oven Type</span>
-    <h2>Built-In, Freestanding, Gas and Wood-Fired Pizza Ovens</h2>
-    <p>Two decisions cover most of the ground — how it is installed, and what it burns. Everything else follows from those, including the clearances, the flue and where the oven can go.</p>
+    <h2>Built-In, Freestanding, Gas and Wood-Fired</h2>
+    <p>Two decisions cover most of the ground: how the oven is installed, and what it burns. The clearances, the flue and where it can sit all follow from those.</p>
   </div>
   <div class="cat-grid">
 
     <div class="cat-card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#d8b57e" stroke-width="1.6"><path d="M3 15a9 6 0 0 1 18 0z"/><path d="M8.5 15a3.5 2.5 0 0 1 7 0"/><path d="M3 15v3h18v-3"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 15a9 6 0 0 1 18 0z"/><path d="M8.5 15a3.5 2.5 0 0 1 7 0"/><path d="M3 15v3h18v-3"/></svg></div>
       <h3>Built-In Pizza Ovens</h3>
       <p>Ovens that drop into an island or masonry enclosure and read as part of the outdoor kitchen run.</p>
-      <a class="link" href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=card_built_in_ovens" target="_blank" rel="noopener">See Built-In Ovens &rarr;</a>
+      <a class="link" href="https://www.bellafinaoutdoors.com/shop?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=card_built_in_ovens" target="_blank" rel="noopener">See Built-In Ovens &rarr;</a>
     </div>
 
     <div class="cat-card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#d8b57e" stroke-width="1.6"><path d="M4 14a8 5 0 0 1 16 0z"/><path d="M6 19v-5M18 19v-5"/><path d="M5 21h14"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 14a8 5 0 0 1 16 0z"/><path d="M6 19v-5M18 19v-5"/><path d="M5 21h14"/></svg></div>
       <h3>Freestanding &amp; Cart Ovens</h3>
       <p>Move-in-ready ovens on a stand or cart — no construction, no trenching, and they can come with you.</p>
-      <a class="link" href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=card_freestanding_ovens" target="_blank" rel="noopener">Browse Freestanding &rarr;</a>
+      <a class="link" href="https://www.bellafinaoutdoors.com/shop?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=card_freestanding_ovens" target="_blank" rel="noopener">Browse Freestanding &rarr;</a>
     </div>
 
     <div class="cat-card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#d8b57e" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
       <h3>Gas-Fired Pizza Ovens</h3>
       <p>Fast heat-up and steady temperature, on the same gas supply that already feeds the grill.</p>
-      <a class="link" href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=card_gas_ovens" target="_blank" rel="noopener">Shop Gas Ovens &rarr;</a>
+      <a class="link" href="https://www.bellafinaoutdoors.com/shop?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=card_gas_ovens" target="_blank" rel="noopener">See Gas Ovens &rarr;</a>
     </div>
 
     <div class="cat-card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#d8b57e" stroke-width="1.6"><path d="M12 3c-1.5 4-5 6-5 10a5 5 0 0 0 10 0c0-2-1-3.5-2-4.5.7 2-.3 3.5-1.3 4-1-2.5 0-5-1.7-9.5z"/></svg></div>
-      <h3>Wood-Fired &amp; Dual-Fuel Ovens</h3>
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3c-1.5 4-5 6-5 10a5 5 0 0 0 10 0c0-2-1-3.5-2-4.5.7 2-.3 3.5-1.3 4-1-2.5 0-5-1.7-9.5z"/></svg></div>
+      <h3>Wood-Fired &amp; Dual-Fuel</h3>
       <p>Live fire and smoke character, with dual-fuel models for wood at the weekend and gas mid-week.</p>
-      <a class="link" href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=card_wood_ovens" target="_blank" rel="noopener">Explore Wood-Fired &rarr;</a>
+      <a class="link" href="https://www.bellafinaoutdoors.com/shop?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=card_wood_ovens" target="_blank" rel="noopener">Explore Wood-Fired &rarr;</a>
     </div>
 
     <div class="cat-card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#d8b57e" stroke-width="1.6"><rect x="2.5" y="8" width="19" height="11" rx="2"/><path d="M2.5 12h19"/><path d="M8 8V6h8v2"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="8" width="19" height="11" rx="2"/><path d="M2.5 12h19"/><path d="M8 8V6h8v2"/></svg></div>
       <h3>Ovens Within an Outdoor Kitchen</h3>
       <p>Planned into the run from the start, so the cut-out, clearances and flue are designed in rather than retrofitted.</p>
-      <a class="link" href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=card_outdoor_kitchens" target="_blank" rel="noopener">See Outdoor Kitchens &rarr;</a>
+      <a class="link" href="https://www.bellafinaoutdoors.com/shop?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=card_outdoor_kitchens" target="_blank" rel="noopener">See Outdoor Kitchens &rarr;</a>
     </div>
 
     <div class="cat-card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#d8b57e" stroke-width="1.6"><path d="M4 20h16"/><path d="M6 20V9h12v11"/><path d="M9 9c0-2 3-2.5 3-5 1.5 2 3 2.5 3 5"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20h16"/><path d="M6 20V9h12v11"/><path d="M9 9c0-2 3-2.5 3-5 1.5 2 3 2.5 3 5"/></svg></div>
       <h3>Enclosures, Bases &amp; Flues</h3>
       <p>The load-bearing base, surround and flue arrangement a built-in oven needs, specified alongside it.</p>
-      <a class="link" href="https://www.bellafinaoutdoors.com/outdoor-living-solutions/fire-features?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=card_enclosures" target="_blank" rel="noopener">Plan an Enclosure &rarr;</a>
+      <a class="link" href="https://www.bellafinaoutdoors.com/outdoor-living-solutions/fire-features?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=card_enclosures" target="_blank" rel="noopener">Plan an Enclosure &rarr;</a>
     </div>
 
     <div class="cat-card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#d8b57e" stroke-width="1.6"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg></div>
       <h3>Veneer, Stone &amp; Tile</h3>
       <p>The stone, tile and finish that wrap the oven surround — selected in the same pass as the hardscape.</p>
-      <a class="link" href="https://www.bellafinaoutdoors.com/outdoor-living-solutions/stone-and-tile?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=card_stone_tile" target="_blank" rel="noopener">Browse Stone &amp; Tile &rarr;</a>
+      <a class="link" href="https://www.bellafinaoutdoors.com/outdoor-living-solutions/stone-and-tile?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=card_stone_tile" target="_blank" rel="noopener">Browse Stone &amp; Tile &rarr;</a>
     </div>
 
-    <div class="cat-card" style="background:var(--navy);border-color:var(--navy);">
-      <h3 style="color:#fff;">Not Sure Which Fuel Suits You?</h3>
-      <p style="color:#c7cede;">Tell us where the oven would sit and how often you'd realistically use it. We'll tell you honestly which direction makes sense.</p>
-      <a class="link" style="color:var(--gold-light);" href="#top" data-quote-modal>Get a Free Consultation &rarr;</a>
+    <div class="cat-card is-navy">
+      <h3>Not Sure Which Fuel Suits You?</h3>
+      <p>Tell us where the oven would sit and how often you would realistically use it. We will tell you which direction makes sense, including when the answer is the cheaper oven.</p>
+      <a class="link" href="#top" data-quote-modal>Request My Free Quote &rarr;</a>
     </div>
 
   </div>
 </section>
 
-<section class="audience" id="who">
+<!-- 7. How it works -->
+<section class="section section-cream" id="how">
   <div class="head">
-    <span class="eyebrow">Who We Work With</span>
-    <h2>Pizza Ovens for Homeowners and Trade Professionals</h2>
-    <p>The same catalog, supported two different ways — whether this is the one backyard you will ever build, or the next of many.</p>
+    <span class="eyebrow">How It Works</span>
+    <h2>From Backyard Photo to First Pizza</h2>
+    <p>Three steps, and the first one takes about five minutes of your time.</p>
   </div>
-  <div class="aud-grid">
-    <div class="aud-card">
-      <span class="eyebrow">For Homeowners</span>
-      <h3>See It, Understand It, Then Buy It</h3>
-      <ul>
-        <li>Showroom displays available for viewing at our Huntington Beach location</li>
-        <li>Straight guidance on gas versus wood based on how often you'll actually cook</li>
-        <li>Help deciding between a built-in oven and a freestanding one for your space</li>
-        <li>Clearance and flue requirements identified before anything is built</li>
-        <li>Delivery and coordination support across Orange County, LA and San Diego</li>
-      </ul>
-      <a class="btn btn-navy" href="#top" data-quote-modal>Book a Free Consultation <span class="btn-arrow">&rarr;</span></a>
+  <div class="steps">
+    <div class="step-card">
+      <span class="num">01</span>
+      <h3>Share Your Space</h3>
+      <p>Send a plan, a rendering, or just photos of the patio and the existing kitchen if there is one, along with how often you would use the oven and how many people you cook for. No plan yet is fine — that is what the showroom is for.</p>
     </div>
-    <div class="aud-card pro">
-      <span class="eyebrow">For Builders, Landscapers &amp; Designers</span>
-      <h3>A Supply Partner That Knows the Details</h3>
-      <ul>
-        <li>Trade pricing and repeat-project account support</li>
-        <li>Manufacturer cut sheets with clearance, flue and base-loading requirements for your plan set</li>
-        <li>Enclosure and veneer coordination so the oven matches the rest of the run</li>
-        <li>A showroom you can send clients to for selections and finishes</li>
-        <li>Deliveries scheduled around your build calendar</li>
-      </ul>
-      <a class="btn btn-primary" href="#top" data-quote-modal>Request Trade Pricing <span class="btn-arrow">&rarr;</span></a>
+    <div class="step-card">
+      <span class="num">02</span>
+      <h3>Specify the Oven</h3>
+      <p>We match the oven to the fuel supply and the space, then pull together the clearance, flue and base-loading requirements your contractor needs. Going into a kitchen run, the surround and veneer are selected in the same pass as the rest of the stone and tile.</p>
+    </div>
+    <div class="step-card">
+      <span class="num">03</span>
+      <h3>Deliver &amp; Fire It Up</h3>
+      <p>The oven arrives on your build schedule with the accessories that make it usable on day one — peel, brush, stone and cover. With the specifications settled up front, your contractor has what they need to keep moving.</p>
     </div>
   </div>
 </section>
 
-<section class="specs">
+<!-- 8. Why BellaFina -->
+<section class="section section-white" id="why">
+  <div class="head">
+    <span class="eyebrow">Why BellaFina</span>
+    <h2>What You Get That a Product Page Doesn't Give You</h2>
+    <p>Six concrete differences, all of them about the decisions that are expensive to get wrong.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <span class="num">01</span>
+      <h3>Straight Fuel Advice</h3>
+      <p>We ask how often you will actually cook before recommending wood. If gas is the oven you will use, we say so.</p>
+    </div>
+    <div class="why-card">
+      <span class="num">02</span>
+      <h3>Specs Before Construction</h3>
+      <p>Clearances to combustibles, venting and base loading come out of the manufacturer's documents, not an estimate made on site.</p>
+    </div>
+    <div class="why-card">
+      <span class="num">03</span>
+      <h3>Covered Patios Handled</h3>
+      <p>Roofs, pergolas and tight property lines change what is practical. We work that out at design stage rather than after the surround is built.</p>
+    </div>
+    <div class="why-card">
+      <span class="num">04</span>
+      <h3>The Surround Too</h3>
+      <p>Enclosure, veneer, coping and tile selected alongside the oven, so the finish matches the rest of the hardscape.</p>
+    </div>
+    <div class="why-card">
+      <span class="num">05</span>
+      <h3>A Showroom To Visit</h3>
+      <p>Size, build quality and working height are hard to judge from a photo. Displays are available for viewing in Huntington Beach.</p>
+    </div>
+    <div class="why-card">
+      <span class="num">06</span>
+      <h3>Delivery Across SoCal</h3>
+      <p>Orange County, Los Angeles County and San Diego County, scheduled around your build calendar rather than ours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Specs -->
+<section class="section section-cream" id="specs">
   <div class="head">
     <span class="eyebrow">Specify With Confidence</span>
     <h2>How to Choose an Outdoor Pizza Oven</h2>
-    <p>Five decisions determine which oven suits your backyard — and most of them are far easier to settle before an enclosure is built around one.</p>
+    <p>Five decisions determine which oven suits your backyard, and most of them are far easier to settle before an enclosure is built around one.</p>
   </div>
   <dl class="spec-table">
     <div class="spec-row"><dt>Fuel Type</dt><dd>Gas heats fast, holds temperature without tending and gets used on weeknights. Wood gives live fire, smoke character and a ritual some people specifically want, at the cost of a longer heat-up and a fire to manage. Dual-fuel splits the difference. The honest question is how often you will cook, because the oven that gets used is the one that suits a Tuesday.</dd></div>
@@ -275,32 +352,8 @@
     <div class="spec-row"><dt>Venting, Clearances &amp; Placement</dt><dd>Every oven publishes clearances to combustibles and a flue or vent arrangement that has to discharge safely — a live issue under a solid roof, pergola or covered patio. Wood-fired ovens produce far more smoke, so flue routing and where that smoke ends up relative to windows and neighbouring properties deserve attention early. Design-stage decisions, not finish-stage ones.</dd></div>
   </dl>
 </section>
-
-<section class="process">
-  <div class="wrap">
-    <span class="eyebrow">The BellaFina Process</span>
-    <h2>From Backyard Photo to First Pizza</h2>
-    <div class="steps">
-      <div class="step-card">
-        <span class="num">01</span>
-        <h3>Share Your Space</h3>
-        <p>Bring a plan, a rendering, or just photos of the patio and the existing kitchen if there is one — along with a sense of how often you'd use the oven and how many people you cook for. No plan yet is fine; that is what the showroom is for.</p>
-      </div>
-      <div class="step-card">
-        <span class="num">02</span>
-        <h3>Specify the Oven</h3>
-        <p>We match the oven to the fuel supply and the space, and pull together the clearance, flue and base-loading requirements your contractor or installer will need. Where it is going into a kitchen run, the surround and veneer are selected in the same pass as the rest of your stone and tile.</p>
-      </div>
-      <div class="step-card">
-        <span class="num">03</span>
-        <h3>Deliver &amp; Fire It Up</h3>
-        <p>The oven arrives on your build schedule with the accessories that make it usable from day one — peel, brush, stone and cover. With the specifications identified upfront, your contractor has what they need to keep the project moving.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="faq" id="faq">
+<!-- 10. FAQ -->
+<section class="section section-white faq" id="faq">
   <div class="head">
     <span class="eyebrow">Pizza Oven Questions</span>
     <h2>Common Questions About Outdoor Pizza Ovens</h2>
@@ -341,7 +394,8 @@
   </div>
 </section>
 
-<section class="areas" id="areas">
+<!-- 11. Service areas -->
+<section class="section section-cream areas" id="areas">
   <div class="head">
     <span class="eyebrow">Where We Work</span>
     <h2>Outdoor Pizza Ovens Across Southern California</h2>
@@ -449,50 +503,79 @@
   <p class="area-note">Building somewhere not on this list, or elsewhere in Riverside or San Bernardino county? Ask us — we ship and deliver beyond this footprint.</p>
 </section>
 
+
+<!-- 12. Showroom -->
 <section class="showroom" id="showroom">
-  <div class="wrap" style="margin:0 auto;">
-    <span class="eyebrow" style="color:var(--gold-light);">Visit Us in Person</span>
+  <div class="wrap">
+    <span class="eyebrow">Visit Us in Person</span>
     <h2>See the Ovens Before You Choose a Fuel</h2>
-    <p>Oven size, build quality, working height and how a surround finish actually looks are hard to judge from a product photo. Showroom displays are available for viewing at our Huntington Beach location, so you can compare models in person and talk them through with our team — or browse the full collection online whenever it suits you.</p>
+    <p>Oven size, build quality, working height and how a surround finish actually looks are hard to judge from a product photo. Displays are available for viewing at our Huntington Beach location, so you can compare models in person and talk them through with our team.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="https://www.bellafinaoutdoors.com/contact?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=showroom_directions" target="_blank" rel="noopener">Get Directions &amp; Contact Info <span class="btn-arrow">&rarr;</span></a>
-      <a class="btn btn-outline" href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=showroom_shop" target="_blank" rel="noopener">Shop Online <span class="btn-arrow">&rarr;</span></a>
+      <button type="button" class="btn btn-primary" data-quote-modal>Request My Free Quote <span class="btn-arrow">&rarr;</span></button>
+      <a class="btn btn-outline" href="https://www.bellafinaoutdoors.com/contact?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=showroom_directions" target="_blank" rel="noopener">Directions &amp; Hours <span class="btn-arrow">&rarr;</span></a>
+    </div>
+    <div class="showroom-facts">
+      <span>15661 Producer Ln Unit I, Huntington Beach</span>
+      <span>(714) 699-9269</span>
     </div>
   </div>
 </section>
 
-
-<section class="final-cta">
-  <h2>Ready to Cook a Pizza in Ninety Seconds?</h2>
-  <p>A freestanding oven on the patio or a built-in oven in a new kitchen run — send us the space and we'll help you work out which one suits it.</p>
-  <a class="btn btn-primary" href="https://www.bellafinaoutdoors.com/?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=final_cta" target="_blank" rel="noopener">Visit BellaFinaOutdoors.com <span class="btn-arrow">&rarr;</span></a>
+<!-- 13. Trade -->
+<section class="section section-navy trade" id="trade">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">For Builders, Landscapers &amp; Designers</span>
+      <h2>A Supply Partner That Reads the Cut Sheet</h2>
+      <p>We work with landscape contractors, builders and designers across Southern California. The useful part is usually not the pricing — it is having the clearance, flue and base-loading numbers in hand before the island is built.</p>
+      <button type="button" class="btn btn-primary" data-quote-modal>Request My Free Quote <span class="btn-arrow">&rarr;</span></button>
+    </div>
+    <ul>
+      <li>Trade pricing and repeat-project account support</li>
+      <li>Manufacturer cut sheets with clearance, flue and base-loading requirements for your plan set</li>
+      <li>Enclosure and veneer coordination so the oven matches the rest of the run</li>
+      <li>A showroom you can send clients to for selections and finishes</li>
+      <li>Deliveries scheduled around your build calendar</li>
+    </ul>
+  </div>
 </section>
 
+<!-- 14. Final CTA -->
+<section class="final-cta">
+  <h2>Tell Us About the Space</h2>
+  <p>A freestanding oven on a finished patio, or a built-in oven in a new kitchen run — send us the space and we will work out which one suits it.</p>
+  <button type="button" class="btn btn-primary" data-quote-modal>Request My Free Quote <span class="btn-arrow">&rarr;</span></button>
+  <p class="cta-note">Or call (714) 699-9269. We typically respond within one business day.</p>
+</section>
+
+<!-- 15. Footer -->
 <footer>
   <div class="footer-grid">
     <div>
-      <a class="logo footer-logo" href="https://www.bellafinaoutdoors.com/?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=footer_logo" target="_blank" rel="noopener" style="margin-bottom:14px;">
+      <a class="logo footer-logo" href="https://www.bellafinaoutdoors.com/?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=footer_logo" target="_blank" rel="noopener">
         <img src="assets/logo.webp" alt="BellaFina Outdoors">
       </a>
-      <p style="font-size:.88rem;color:#9aa2b6;max-width:280px;">Premium fire features, BBQs, outdoor kitchens, and outdoor living solutions designed to bring your backyard vision to life. Design services available.</p>
+      <p class="footer-about">Fire features, BBQs, outdoor kitchens and outdoor living solutions, designed and supplied from Huntington Beach. Design services available.</p>
     </div>
     <div>
-      <h4>Pages</h4>
+      <h4>On This Page</h4>
       <ul>
-        <li><a href="https://www.bellafinaoutdoors.com/?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=footer_home" target="_blank" rel="noopener">Home</a></li>
-        <li><a href="https://www.bellafinaoutdoors.com/about?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=footer_about" target="_blank" rel="noopener">About Us</a></li>
-        <li><a href="https://www.bellafinaoutdoors.com/contact?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=footer_contact" target="_blank" rel="noopener">Contact Us</a></li>
+        <li><a href="#fuel">Gas vs Wood</a></li>
+        <li><a href="#types">Oven Types</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#specs">How to Choose</a></li>
+        <li><a href="#areas">Service Area</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
     </div>
     <div>
       <h4>Outdoor Living</h4>
       <ul>
-        <li><a href="https://www.bellafinaoutdoors.com/outdoor-living-solutions/fire-features?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=footer_fire_features" target="_blank" rel="noopener">Fire Features</a></li>
-        <li><a href="https://www.bellafinaoutdoors.com/outdoor-living-solutions/water-features?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=footer_water_features" target="_blank" rel="noopener">Water Features</a></li>
-        <li><a href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=footer_bbqs" target="_blank" rel="noopener">BBQs &amp; Grills</a></li>
-        <li><a href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=footer_kitchen_components" target="_blank" rel="noopener">Outdoor Kitchen Components</a></li>
-        <li><a href="https://www.bellafinaoutdoors.com/shop?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=footer_pizza_ovens" target="_blank" rel="noopener">Pizza Ovens</a></li>
-        <li><a href="https://www.bellafinaoutdoors.com/outdoor-living-solutions/stone-and-tile?utm_source=fire-bowls-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza_ovens&amp;utm_content=footer_stone_tile" target="_blank" rel="noopener">Coping, Stone &amp; Tile</a></li>
+        <li><a href="https://www.bellafinaoutdoors.com/outdoor-living-solutions/fire-features?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=footer_fire_features" target="_blank" rel="noopener">Fire Features</a></li>
+        <li><a href="https://www.bellafinaoutdoors.com/outdoor-living-solutions/water-features?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=footer_water_features" target="_blank" rel="noopener">Water Features</a></li>
+        <li><a href="https://www.bellafinaoutdoors.com/shop?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=footer_bbqs" target="_blank" rel="noopener">BBQs &amp; Grills</a></li>
+        <li><a href="https://www.bellafinaoutdoors.com/shop?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=footer_pizza_ovens" target="_blank" rel="noopener">Pizza Ovens</a></li>
+        <li><a href="https://www.bellafinaoutdoors.com/outdoor-living-solutions/stone-and-tile?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=footer_stone_tile" target="_blank" rel="noopener">Coping, Stone &amp; Tile</a></li>
       </ul>
     </div>
     <div>
@@ -501,6 +584,7 @@
         <li>15661 Producer Ln Unit I,<br>Huntington Beach, CA 92649</li>
         <li><a href="mailto:info@bellafinaoutdoors.com">info@bellafinaoutdoors.com</a></li>
         <li><a href="tel:+17146999269">(714) 699-9269</a></li>
+        <li><a href="https://www.bellafinaoutdoors.com/contact?utm_source=pizza-ovens-lp&amp;utm_medium=landing_page&amp;utm_campaign=pizza-ovens&amp;utm_content=footer_contact" target="_blank" rel="noopener">Contact BellaFina Outdoors</a></li>
       </ul>
     </div>
   </div>
@@ -514,12 +598,12 @@
   <div class="modal-backdrop" data-modal-close></div>
   <div class="modal-card">
     <button type="button" class="modal-close" data-modal-close aria-label="Close">&times;</button>
-    <h3 id="quote-modal-title">Get Your Free Pizza Oven Quote</h3>
-    <p class="modal-sub">Tell us where the oven is going and how you like to cook, and our team will follow up with options and pricing.</p>
+    <h3 id="quote-modal-title">Request My Free Quote</h3>
+    <p class="modal-sub">Tell us where the oven is going and how you like to cook. Our team will follow up with options and pricing, usually within one business day.</p>
     <div class="modal-embed-wrap" id="quote-embed-wrap">
       <div class="modal-loading">Loading the form&hellip;<br>
         <a href="https://api.leadconnectorhq.com/widget/form/iD7GLxxCdv51i6umUCJF" target="_blank" rel="noopener"
-           style="color:var(--orange-dark);font-weight:600;">Open it in a new tab &rarr;</a></div>
+           style="color:var(--orange);font-weight:600;">Open it in a new tab &rarr;</a></div>
       <iframe class="lead-embed" id="quote-modal-embed"
       data-src="https://api.leadconnectorhq.com/widget/form/iD7GLxxCdv51i6umUCJF"
       data-layout="{'id':'INLINE'}"

@@ -39,18 +39,30 @@ Production deploys from `main`. Every push redeploys automatically.
 It does not link to the other BellaFina landing sites (fire bowls, fire pits and outdoor kitchens).
 The header nav is on-page anchors only:
 
-`#top` Pizza Ovens · `#types` Oven Types · `#wood` Wood-Fired · `#who` Homeowners & Pros · `#areas` Service Area · `#faq` FAQ
+`#top` Pizza Ovens · `#fuel` Gas vs Wood · `#types` Oven Types · `#how` How It Works ·
+`#specs` How to Choose · `#areas` Service Area · `#faq` FAQ
+
+The header logo is an anchor to `#top`, not an outbound link — nothing in the nav
+leaves the page.
 
 Every outbound link goes to **bellafinaoutdoors.com**, deep-linked to the matching
 page rather than the homepage, and carries UTM tags:
 
-- `utm_source=fire-bowls-lp`
+- `utm_source=pizza-ovens-lp`
 - `utm_medium=landing_page`
-- `utm_campaign=pizza_ovens`
-- `utm_content=<placement>` — e.g. `hero_shop_fire_pits`, `card_fire_tables`,
+- `utm_campaign=pizza-ovens`
+- `utm_content=<placement>` — e.g. `split_gas_ovens`, `card_built_in_ovens`,
   `showroom_directions`, `footer_contact`
 
 Adding a nav item means adding an `id` to the section it points at.
+
+## One primary CTA
+
+The page has a single primary call to action — **Request My Free Quote**, which opens
+the quote modal. It appears in the header, the hero, the product grid, the showroom
+band, the trade band and the final CTA, and `.btn-primary` is reserved for it.
+Outbound links to bellafinaoutdoors.com are always secondary (`.btn-navy`,
+`.btn-outline` or a text link), so no off-site link competes with the quote.
 
 ## Leads
 
@@ -68,9 +80,26 @@ desktop exit intent.
 
 ## Design
 
-Navy / gold / orange tokens, Georgia headings, sticky header, hero with a lead
-card, trust strip, split sections, category grid, homeowner/trade split, spec
-table, three-step process, FAQ, service area, showroom band, final CTA, footer.
+The page follows the BellaFina Outdoors system, and every value in it comes from a
+token in `assets/site.css` — no page or rule should carry a raw hex.
+
+| Token | Value | Use |
+| --- | --- | --- |
+| `--navy` | `#0d1b2a` | headings, dark bands, footer |
+| `--cream` | `#fdf5ec` | page ground |
+| `--orange` | `#e5672a` | the single accent — primary CTA, bullets, links |
+| `--gold` | `#c8a25b` | eyebrows and hairlines |
+| `--radius` | `10px` | every card, button, field and panel |
+
+Type: **Cormorant Garamond** for `h1`/`h2` (`--font-display`), **Montserrat** for
+sub-headings, nav, buttons and eyebrows (`--font-ui`), **Roboto** for body copy
+(`--font-body`). All three load from Google Fonts in `<head>`.
+
+Section order, top to bottom:
+
+hero → trust strip → design center → lede → product splits → product grid →
+how it works → why BellaFina → specs → FAQ → service areas → showroom → trade →
+final CTA → footer
 
 This site has no photography of its own yet, so the hero uses a brand gradient
 (`.hero-oven` in `assets/site.css`) and the split sections use gradient panels with an
