@@ -322,3 +322,15 @@
 
   /* The header is sticky, so anchored sections need room above them. */
   section[id],div[id]{scroll-margin-top:88px;}
+
+  /* Header CTA keeps its full label where there is room and shortens on small
+     screens, so the sticky bar stays one line high. */
+  .cta-short{display:none;}
+  @media (max-width:1120px){ .cta-long{display:none;} .cta-short{display:inline;} }
+
+  /* Social links in the footer's brand column: circular icon-only buttons. */
+  .footer-social{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-wrap:wrap;gap:10px;}
+  .footer-social a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;
+    border-radius:50%;color:var(--on-navy);background:color-mix(in srgb, var(--cream) 8%, transparent);
+    border:1px solid color-mix(in srgb, var(--cream) 16%, transparent);transition:background .2s,color .2s;}
+  .footer-social a:hover{color:var(--white);background:color-mix(in srgb, var(--cream) 20%, transparent);}
