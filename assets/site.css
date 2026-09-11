@@ -181,7 +181,9 @@
   .dc-card .icon svg{width:24px;height:24px;}
   .dc-card h3{color:var(--navy);font-size:1.12rem;margin-bottom:10px;line-height:1.35;}
   .dc-card p{color:var(--muted);font-size:.94rem;margin:0;}
-  .dc-cta{justify-content:center;margin-top:36px;}
+  /* .cta-row is only given a layout inside the hero and showroom on this
+     page, so a button row anywhere else has to declare its own. */
+  .dc-cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:36px;}
 
   /* Partner logos. Each mark is a different shape and weight, so they are
      capped by height and knocked back to one tone — that keeps the strip
