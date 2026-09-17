@@ -13,6 +13,9 @@
     --gold-light:#dcc08a;
     --cream:#fdf5ec;
     --cream-2:#f6e9d8;
+    --blue:#3d7da8;
+    --blue-pale:#b8d0e3;
+    --orange-dark:#c9531c;
 
     /* Surfaces, type, lines */
     --white:#ffffff;
@@ -62,18 +65,23 @@
   a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--orange);outline-offset:2px;}
 
   /* Header */
-  header{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:1px solid var(--border-soft);}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 24px;max-width:1180px;margin:0 auto;}
+  header{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:1px solid var(--blue-pale);}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 24px;max-width:1280px;margin:0 auto;}
   .logo{display:flex;align-items:center;gap:10px;}
-  .logo img{height:44px;width:auto;flex-shrink:0;}
+  .logo img{height:52px;width:auto;flex-shrink:0;}
   .logo.footer-logo{background:var(--white);border-radius:var(--radius);padding:10px 16px;display:inline-flex;}
-  .logo.footer-logo img{height:40px;}
-  nav.links{display:flex;align-items:center;gap:26px;}
-  nav.links a{font-family:var(--font-ui);font-size:.88rem;color:var(--navy);font-weight:500;}
+  .logo.footer-logo img{height:44px;}
+  nav.links{display:flex;align-items:center;gap:18px;}
+  nav.links a{font-family:var(--font-ui);font-size:.88rem;color:var(--navy);font-weight:500;white-space:nowrap;}
   nav.links a:hover{color:var(--orange);}
-  .header-ctas{display:flex;gap:12px;align-items:center;}
-  .header-ctas .btn{padding:11px 20px;font-size:.82rem;}
-  @media (max-width:980px){ nav.links{display:none;} }
+  .header-ctas{display:flex;gap:10px;align-items:center;}
+  .header-ctas .btn{padding:11px 20px;font-size:.78rem;letter-spacing:.06em;
+    text-transform:uppercase;font-weight:700;white-space:nowrap;}
+  .header-ctas .btn-primary{background:var(--orange);}
+  .header-ctas .btn-primary:hover{background:var(--orange-dark);}
+  .header-ctas .btn-ghost{background:var(--navy);color:var(--white);}
+  .header-ctas .btn-ghost:hover{background:var(--navy-2);}
+  @media (max-width:1100px){ nav.links{display:none;} }
 
   /* Hero. The base hero is a flat dark ground; a page with its own photograph
      adds .hero-photo and points --hero-image at the file in its own assets/
@@ -330,16 +338,16 @@
   .final-cta .cta-note{font-size:.82rem;margin-top:18px;margin-bottom:0;}
 
   /* Footer */
-  footer{background:var(--navy);color:var(--on-navy);padding:60px 24px 30px;}
+  footer{background:var(--navy);color:#c7cede;padding:60px 24px 30px;}
   .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;max-width:1180px;margin:0 auto;
-    padding-bottom:38px;border-bottom:1px solid color-mix(in srgb, var(--cream) 14%, transparent);}
-  .footer-grid h4{color:var(--white);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;}
+    padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1);}
+  .footer-grid h4{color:var(--white);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;}
   .footer-grid ul{list-style:none;padding:0;margin:0;}
-  .footer-grid li{margin-bottom:10px;font-size:.89rem;}
+  .footer-grid li{margin-bottom:10px;font-size:.9rem;}
   .footer-grid a:hover{color:var(--white);}
-  .footer-about{font-size:.88rem;max-width:290px;margin:14px 0 0;}
-  .footer-bottom{max-width:1180px;margin:22px auto 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
-    font-size:.78rem;color:color-mix(in srgb, var(--on-navy) 72%, var(--navy));}
+  .footer-about{font-size:.88rem;color:#9aa2b6;max-width:280px;margin:14px 0 0;}
+  .footer-bottom{max-width:1180px;margin:24px auto 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    font-size:.8rem;color:#8b93a9;}
   @media (max-width:800px){.footer-grid{grid-template-columns:1fr 1fr;}}
 
   /* Page heroes without photography of their own use the brand ground. */
@@ -363,6 +371,6 @@
   /* Social links in the footer's brand column: circular icon-only buttons. */
   .footer-social{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-wrap:wrap;gap:10px;}
   .footer-social a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;
-    border-radius:50%;color:var(--on-navy);background:color-mix(in srgb, var(--cream) 8%, transparent);
-    border:1px solid color-mix(in srgb, var(--cream) 16%, transparent);transition:background .2s,color .2s;}
-  .footer-social a:hover{color:var(--white);background:color-mix(in srgb, var(--cream) 20%, transparent);}
+    border-radius:50%;color:#c7cede;background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.16);transition:background .2s,color .2s;}
+  .footer-social a:hover{color:var(--white);background:rgba(255,255,255,.2);}
