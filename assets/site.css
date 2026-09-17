@@ -249,6 +249,9 @@
   .visual svg{width:38%;height:38%;color:color-mix(in srgb, var(--cream) 85%, transparent);}
   .visual-fire{background:linear-gradient(160deg, var(--orange), var(--orange-deep) 55%, var(--navy));}
   .visual-water{background:linear-gradient(160deg, var(--navy-2), var(--navy) 60%, var(--navy-deep));}
+  /* Section photos fill the 4:3 slot edge to edge. */
+  .visual-photo{background:var(--navy);}
+  .visual-photo img{display:block;width:100%;height:100%;object-fit:cover;}
   @media (max-width:880px){ .split .wrap{grid-template-columns:1fr;} .split.reverse .wrap{direction:ltr;} }
 
   /* Product grid */
