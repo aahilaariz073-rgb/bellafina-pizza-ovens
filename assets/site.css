@@ -10,7 +10,7 @@
     --navy-deep:#081320;
     --orange:#e5672a;
     --gold:#c8a25b;
-    --gold-light:#dcc08a;
+    --gold-light:#dcbc84;
     --cream:#fdf5ec;
     --cream-2:#f6e9d8;
     --blue:#3d7da8;
@@ -97,7 +97,7 @@
   .hero-ring::before{content:"";position:absolute;inset:60px;border:1px solid color-mix(in srgb, var(--gold) 13%, transparent);border-radius:50%;}
   .hero-grid{position:relative;z-index:3;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr .8fr;gap:56px;align-items:center;}
   .hero-inner{max-width:660px;}
-  .hero .eyebrow{color:var(--gold-light);font-size:.76rem;}
+  .hero .eyebrow{color:var(--gold-light);font-size:.8rem;}
   .hero h1{color:var(--white);font-size:clamp(2.3rem,4.2vw,3.4rem);margin-top:16px;}
   .hero p.sub{color:var(--on-navy);font-size:1.12rem;max-width:560px;margin:0 0 30px;}
   .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
