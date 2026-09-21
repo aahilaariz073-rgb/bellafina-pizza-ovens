@@ -201,7 +201,7 @@
   .brand-strip-label{text-align:center;margin:0 0 22px;font-family:var(--font-ui);
     font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;}
   .brand-logos{list-style:none;margin:0;padding:0;display:grid;
-    grid-template-columns:repeat(5,1fr);gap:30px 36px;align-items:center;}
+    grid-template-columns:repeat(3,1fr);gap:30px 36px;align-items:center;}
   .brand-logos li{display:flex;align-items:center;justify-content:center;height:52px;}
   .brand-logos img{max-height:100%;max-width:160px;width:auto;object-fit:contain;
     filter:grayscale(1) contrast(1.15);opacity:.8;transition:filter .2s ease,opacity .2s ease;}
