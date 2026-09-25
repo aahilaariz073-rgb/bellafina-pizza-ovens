@@ -90,9 +90,11 @@
   .hero{position:relative;padding:120px 24px 104px;overflow:hidden;background:var(--navy-deep);}
   .hero-photo{background-image:var(--hero-image);background-size:cover;background-position:center 60%;}
   .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:
-    linear-gradient(100deg, color-mix(in srgb, var(--navy-deep) 72%, transparent) 0%,
-                             color-mix(in srgb, var(--navy-deep) 50%, transparent) 32%,
-                             transparent 72%);}
+    linear-gradient(100deg, color-mix(in srgb, var(--navy-deep) 88%, transparent) 0%,
+                             color-mix(in srgb, var(--navy-deep) 82%, transparent) 28%,
+                             color-mix(in srgb, var(--navy-deep) 62%, transparent) 46%,
+                             color-mix(in srgb, var(--navy-deep) 22%, transparent) 64%,
+                             transparent 78%);}
   .hero-ring{position:absolute;z-index:2;width:640px;height:640px;border:1px solid color-mix(in srgb, var(--gold) 20%, transparent);border-radius:50%;top:-260px;right:-160px;pointer-events:none;}
   .hero-ring::before{content:"";position:absolute;inset:60px;border:1px solid color-mix(in srgb, var(--gold) 13%, transparent);border-radius:50%;}
   .hero-grid{position:relative;z-index:3;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr .8fr;gap:56px;align-items:center;}
@@ -153,6 +155,9 @@
     .hero-grid{grid-template-columns:1fr;}
     .hero-inner{max-width:100%;}
     .lead-card{justify-self:start;max-width:520px;}
+    /* Stacked, the copy runs full width, so the angled scrim that darkens only
+       the left no longer sits under the text. Use an even wash instead. */
+    .hero::before{background:linear-gradient(180deg, rgba(10,16,26,.86) 0%, rgba(10,16,26,.72) 45%, rgba(10,16,26,.80) 100%);}
   }
 
   /* Trust strip */
